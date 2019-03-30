@@ -1,0 +1,25 @@
+INCS = ../ \
+  C:\Projects\third-party\g3log\include \
+  C:\Projects\third-party\g3log\src
+
+KIND = static
+OPTIONS = \
+	exceptions/on \
+	standard-c++/14 \
+	warn/on
+
+SRCS = \
+
+USES = \
+	stdc++ \
+
+DEFS.win = \
+  ML \
+	ML_WINDOWS \
+	USE_GLFW=1
+
+DEFS.lumin = \
+  ML \
+	ML_DEVICE \
+	USE_GLFW=0
+
